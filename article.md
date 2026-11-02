@@ -14,6 +14,8 @@ We might need to introduce discount rules, handle order cancellations, or suppor
 
 In this article, we'll explore that decision using a practical ASP.NET Core example. We'll start with a straightforward implementation, introduce additional business rules, and examine what we gain — and what we give up — when we introduce Clean Architecture.
 
+You can find the complete source code for both implementations in the [Engineering Playground repository](https://github.com/NGeorgievKolev/engineering-playground) on GitHub.
+
 ## Starting with a Simple API
 
 Our initial requirements are straightforward. A customer can create an order containing one or more products. The application needs to validate the request, retrieve the product prices, calculate the total amount, and save the order to a database.
