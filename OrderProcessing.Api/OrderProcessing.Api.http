@@ -1,0 +1,30 @@
+@host = https://localhost:7121
+
+### Create an order
+POST {{host}}/orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "productId": 2,
+      "quantity": 1
+    }
+  ]
+}
+
+### Cancel an existing order
+POST {{host}}/orders/2/cancel
+Accept: application/json
+
+### Cancel an already cancelled order
+POST {{host}}/orders/2/cancel
+Accept: application/json
+
+### Cancel an unknown order
+POST {{host}}/orders/999/cancel
+Accept: application/json

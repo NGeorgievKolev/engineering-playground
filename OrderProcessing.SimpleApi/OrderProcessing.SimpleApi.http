@@ -1,0 +1,39 @@
+@host = https://localhost:7267
+
+### Check API
+GET {{host}}/
+Accept: application/json
+
+### Create order
+POST {{host}}/orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "productId": 2,
+      "quantity": 1
+    }
+  ]
+}
+
+###Create order
+POST https://localhost:7267/orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 1
+    }
+  ]
+}
+
+### Cancel existing pending order
+POST https://localhost:7267/orders/3/cancel
+Accept: application/json

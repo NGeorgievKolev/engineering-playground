@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/articles/" />
+  <Folder Name="/articles/clean-architecture/">
+    <File Path="article.md" />
+  </Folder>
+  <Project Path="OrderProcessing.Api/OrderProcessing.Api.csproj" Id="cff95ac7-5d0e-4b1f-b698-bdd2602e4891" />
+  <Project Path="OrderProcessing.Application.Tests/OrderProcessing.Application.Tests.csproj" Id="201d76d9-4156-493f-8c34-92f346d47d6c" />
+  <Project Path="OrderProcessing.Application/OrderProcessing.Application.csproj" Id="50aa89fb-7949-46e0-8d33-fcd909ef9677" />
+  <Project Path="OrderProcessing.Domain.Tests/OrderProcessing.Domain.Tests.csproj" Id="52426b05-7588-4323-bb3d-c9f73dd5fd9a" />
+  <Project Path="OrderProcessing.Domain/OrderProcessing.Domain.csproj" Id="aa72e6d0-67b5-4c27-821e-1401ba497f4a" />
+  <Project Path="OrderProcessing.Infrastructure.Tests/OrderProcessing.Infrastructure.Tests.csproj" Id="45f3374c-856c-4055-994b-bb1897042e66" />
+  <Project Path="OrderProcessing.Infrastructure/OrderProcessing.Infrastructure.csproj" Id="2a2bd9b7-37a2-484e-b1f7-3728f18b5e4b" />
+  <Project Path="OrderProcessing.SimpleApi/OrderProcessing.SimpleApi.csproj" />
+</Solution>
